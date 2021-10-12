@@ -11,14 +11,15 @@ namespace appClassHerenciaCS_Consola
     static void Main(string[] args)
     {
       Punto2D a;
-      a = new Punto2D(98,76);
+      a = new Punto2D(-1.45, -2.88);
       Console.WriteLine(a.ToString());
 
-      Punto a2;
-      a2 = new Punto(5.99);
+      Punto2D b;
+      b = new Punto2D(3.55, 9.02);
+      Console.WriteLine(b.ToString());
 
-      Console.WriteLine(a2.ToString());
-
+      double d = a.Distancia(b);
+      Console.WriteLine("Distancia "+d);
 
       Console.ReadKey();
 

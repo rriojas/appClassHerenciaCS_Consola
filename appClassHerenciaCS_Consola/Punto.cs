@@ -33,7 +33,8 @@ namespace appClassHerenciaCS_Consola
     public double Distancia(Punto p)
     {
       double d = 0;
-      d = x - p.x; // Valor Absoluto
+      d = x - p.x;
+      d = Math.Abs(d);// Valor Absoluto
       return d;
     }
     public override string ToString()
